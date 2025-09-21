@@ -1,5 +1,5 @@
-import { RowID, RowElement } from "./interface";
+import { RowElement } from "./interface";
 
-declare function insertRow(row: RowElement): number;
-declare function deleteRow(rowId: number): void;
-declare function updateRow(rowId: number, row: RowElement): number;
+export declare function insertRow(row: RowElement): number;
+export declare function deleteRow(rowId: number): void;
+export declare function updateRow(rowId: number, row: RowElement): number;
