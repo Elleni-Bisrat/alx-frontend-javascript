@@ -16,9 +16,10 @@ const teacher3: Teacher = {
 };
 
 console.log(teacher3);
-interface Director extends Teacher{
-  numberOfReports:number;
+interface Director extends Teacher {
+  numberOfReports: number;
 }
+
 const director1: Director = {
   firstName: 'John',
   lastName: 'Doe',
@@ -26,4 +27,5 @@ const director1: Director = {
   fullTimeEmployee: true,
   numberOfReports: 17,
 };
+
 console.log(director1);
