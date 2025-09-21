@@ -64,8 +64,9 @@ function executeWork(employee: Director | Teacher): string {
   }
 }
 
-type Subjects = 'Math' | 'History';
+type Subjects='Math'|'History';
 
-export function teachClass(todayClass: Subjects): string {
-  return todayClass === 'Math' ? 'Teaching Math' : 'Teaching History';
+function teachClass(todayClass:Subjects):string{
+  if(todayClass==='Math') return 'Teaching Math';
+  return 'Teaching History';
 }
