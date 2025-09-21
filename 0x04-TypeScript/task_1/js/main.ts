@@ -51,14 +51,9 @@ interface StudentConstructor {
   lastName: string;
 }
 
-interface StudentClassInterface {
-  workOnHomework(): string;
-  displayName(): string;
-}
-
-class StudentClass implements StudentClassInterface {
-  private firstName: string;
-  private lastName: string;
+class StudentClass {
+  firstName: string;
+  lastName: string;
 
   constructor({ firstName, lastName }: StudentConstructor) {
     this.firstName = firstName;
@@ -73,8 +68,3 @@ class StudentClass implements StudentClassInterface {
     return this.firstName;
   }
 }
-
-
-const student = new StudentClass({ firstName: "Eleni", lastName: "Bisrat" });
-console.log(student.displayName());
-console.log(student.workOnHomework());
